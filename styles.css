@@ -1,0 +1,40 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cuadrado {
+    width: 150px;
+    height: 150px;
+    background-color: #FF5733; /* Rojo cálido */
+    border-radius: 15px; /* Bordes redondeados */
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: white;
+}
+
+.mensaje-oculto {
+    display: none;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cuadrado.rotado {
+    transform: rotateY(180deg);
+}
+
+.cuadrado.rotado .texto {
+    display: none;
+}
